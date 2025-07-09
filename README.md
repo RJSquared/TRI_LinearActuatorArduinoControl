@@ -8,12 +8,13 @@ The provided Arduino R3 UNO c++ code is specificially to control this hardware i
 1. Close test fixture and apply a defined pressure to the MEA
 1. Maintain the defined pressure on the MEA during operation/experimentation
 
+## Operation
 To operate in manual mode, all triggers and setpoints for Actuator operation are controlled and manually set by the user. This is accomplished via the HMI, which comprises __One Switch__, and __One Potentiometer__. 
-- The _Switch_ 
-- The _Potentiometer_ controls the speed and direction
-- An Emergency Stop signal which overrides the above settings and stops all motion
+- The _Switch_ controls the operating mode of the system: Either `Manual Positioning`, or `Maintain Pressure`
+- The _Potentiometer_ controls the speed and direction of the linear actuator motion when in `Manual Positioning` mode. The more the Pot is turned, the faster the actuator extends/retracts. There is a 'dead zone' in the Pot midrange in which there is no motion. The _Potentiometer_ is NOT used in `Maintain Pressure` mode.
+- An Emergency Stop signal which overrides the above settings and stops all motion. Neither the _Switch_ nor the _Pot_ are active in this mode. This signal is intended to be a physical switch.
 
-For full automation, all triggers and setpoints for Actuator operation
+To operate in auto mode, all triggers and setpoints for Actuator operation are controlled and computationally set programatically via software, eg. HELAO. There is NO HMI, however there should still be a physical E-Stop button which stops all motion when an error is detected by the user. 
 
 ## Materials
 ### Main Components
