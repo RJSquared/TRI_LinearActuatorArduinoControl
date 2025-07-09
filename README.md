@@ -14,6 +14,8 @@ The coupling between the linear actuator and the reciprocating test fixture half
 
 Once the MEA Test Fixture is Closed, the Force is visually monitored and manually adjusted via _Pot_ to a desired value, and then the mode _switch_ is set to `Maintain Pressure`. When the _Switch_ is flipped to `Maintain Pressure`, it records the current applied force, and then maintains the linear actuator position such that the applied force is constant during the execution of the experimental campaign.  
 
+----------------------------------------------------
+
 ## Operation
 To operate in manual mode, all triggers and setpoints for Actuator operation are controlled and manually set by the user. This is accomplished via the HMI, which comprises __One Switch__, and __One Potentiometer__. 
 - The _Switch_ controls the operating mode of the system: Either `Manual Positioning`, or `Maintain Pressure`
@@ -38,6 +40,8 @@ Initialization:
 - HMI _Switch_ in `Manual Positioning` mode
 - HMI _Pot_ in `Dead Zone`, ie No Actuator Motion
 - _Emergency Stop_ OFF, ie instrument active
+  
+----------------------------------------------------
 
 ## Materials
 ### Main Components
