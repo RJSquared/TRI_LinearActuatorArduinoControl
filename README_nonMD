@@ -1,0 +1,7 @@
+This package shows how to control a Firgelli Automations Linear Actuator using an Arduino UNO.
+
+It utilizes a custom HMI to implement 3 usage modes: 
+- External Emergency Stop (No Action) 
+- Manual Positioning
+- Maintain Force 
+
