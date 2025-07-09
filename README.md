@@ -22,6 +22,13 @@ To operate in manual mode, all triggers and setpoints for Actuator operation are
 
 To operate in auto mode, all triggers and setpoints for Actuator operation are controlled and computationally set programatically via software, eg. HELAO. There is NO HMI, however there should still be a physical E-Stop button which stops all motion when an error is detected by the user. 
 
+### Modes of Operation
+
+It utilizes a custom HMI to implement 3 distinct modes: 
+- `External Emergency Stop` (No Action) 
+- `Manual Positioning`
+- `Maintain Force` 
+
 ### SOP
 
 When in manual mode, the linear actuator is controlled by the user via an HMI (_Potentiometer_ and _Switch_). 
@@ -49,9 +56,3 @@ Initialization:
 
 
 ----------------------------------------------------
-
-## Modes of Operation
-It utilizes a custom HMI to implement 3 usage modes: 
-- External Emergency Stop (No Action) 
-- Manual Positioning
-- Maintain Force 
