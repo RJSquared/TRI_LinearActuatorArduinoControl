@@ -8,7 +8,10 @@ The provided Arduino R3 UNO c++ code is specificially to control this hardware i
 1. Close test fixture and apply a defined pressure to the MEA
 1. Maintain the defined pressure on the MEA during operation/experimentation
 
-To operate in manual mode, all triggers and setpoints for Actuator operation
+To operate in manual mode, all triggers and setpoints for Actuator operation are controlled and manually set by the user. This is accomplished via the HMI, which comprises __One Switch__, and __One Potentiometer__. 
+- The _Switch_ 
+- The _Potentiometer_ controls the speed and direction
+- An Emergency Stop signal which overrides the above settings and stops all motion
 
 For full automation, all triggers and setpoints for Actuator operation
 
