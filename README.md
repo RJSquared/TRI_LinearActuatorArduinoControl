@@ -1,5 +1,17 @@
 # LinearActuatorArduinoControl
 
+## Description
+This Repo conatins all necessary information to control a Firgelli Linear Actuator with a custom Human Machine Interface (HMI) using an Arduino UNO R3 controller.
+
+The provided Arduino R3 UNO c++ code is specificially to control this hardware in the context of a custom reciprocating robot. The purpose of this robot is to:
+1. Open a parallel plate MEA test fixture to allow loading of an MEA
+1. Close test fixture and apply a defined pressure to the MEA
+1. Maintain the defined pressure on the MEA during operation/experimentation
+
+To operate in manual mode, all triggers and setpoints for Actuator operation
+
+For full automation, all triggers and setpoints for Actuator operation
+
 ## Materials
 ### Main Components
 - [Firgelli Linear Actuator](https://www.firgelliauto.com/products/linear-actuators?variant=843926567)
